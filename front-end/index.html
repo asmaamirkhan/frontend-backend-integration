@@ -31,11 +31,16 @@
       <div class="row">
         <div class="col-sm-12 col-md-7">
           <i class="far fa-comments fa-5x tm-site-icon"></i>
-          <h1 class="tm-site-name">Image Survey</h1>
+          <h1 class="tm-site-name" id="page_title"></h1>
         </div>
         <div class="col-sm-12 col-md-5 mt-md-0 mt-5">
           <div class="tm-site-header-right-col">
-            <a href="posts.html" target="_blank" class="btn btn-primary">Posts</a>
+            <a
+              href="posts.html"
+              target="_blank"
+              class="btn btn-primary"
+              id="nav_but"
+            ></a>
           </div>
         </div>
       </div>
@@ -47,20 +52,11 @@
       <div class="row">
         <div class="tm-intro">
           <div class="col-sm-12 col-md-8 mb-md-0 mb-4 tm-intro-left">
-            <p class="mb-0">
-              This survey form HTML template provides answer choices with
-              different images. You can feel free to modify and use it for your
-              data collection projects or websites. All images used in this page
-              are from <a href="https://unsplash.com">Unsplash</a>. You are not
-              allowed to re-post this template on your template sites as a
-              download zip file. You can put a screenshot and a link back to
-              <a rel="nofollow" href="https://templatemo.com">templatemo</a>
-              site. Thank you.
-            </p>
+            <p class="mb-0" id="page_intro"></p>
           </div>
           <div class="col-sm-12 col-md-4">
             <em>
-              <p class="tm-highlight">&ldquo;Your Opinion Matters&rdquo;</p>
+              <p class="tm-highlight" id="intro_label"></p>
             </em>
           </div>
         </div>
@@ -73,20 +69,19 @@
         <div class="row">
           <!-- col-12 -->
 
-          
           <!-- col-12 -->
 
           <div id="question_part"></div>
 
           <div class="col-12 tm-respondent-info">
-            
-            <h2 class="tm-question-header tm-question-header-mt">
-              Please tell a little bit about yourself
-            </h2>
+            <h2
+              class="tm-question-header tm-question-header-mt"
+              id="form_intro"
+            ></h2>
             <div class="row">
               <div class="col-md-6 col-lg-4">
                 <div class="form-group">
-                  <label for="inputName">Your Name</label>
+                  <label for="inputName" id="name_label"></label>
                   <input
                     type="text"
                     class="form-control browser-default"
@@ -96,7 +91,7 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="inputEmail">Your Email</label>
+                  <label for="inputEmail" id="email_label"></label>
                   <input
                     type="email"
                     class="form-control browser-default"
@@ -115,7 +110,7 @@
                       class="with-gap"
                       value="male"
                     />
-                    <span>Male</span>
+                    <span id="male_label"></span>
                   </label>
                   <label class="tm-q-choice tm-choice-ml">
                     <input
@@ -124,21 +119,16 @@
                       class="with-gap"
                       value="female"
                     />
-                    <span>Female</span>
+                    <span id="female_label"></span>
                   </label>
                 </div>
-                <div class="input-field col tm-dropdown-container">
-                  <select class="" name="occupation" id="occupation">
-                    <option value="select">Your Occupation</option>
-                    <option value="CE">Chief Executive</option>
-                    <option value="SA">Software Architect</option>
-                    <option value="PM">Project Manager</option>
-                    <option value="WD">Web Developer</option>
-                  </select>
-                </div>
+                <div
+                  class="input-field col tm-dropdown-container"
+                  id="select_div"
+                ></div>
               </div>
               <div class="col-md-12 col-lg-4">
-                <label for="message" class="mb-3">Additional Opinions</label>
+                <label for="message" class="mb-3" id="opinion_label"></label>
                 <textarea
                   class="p-3"
                   name="message"
@@ -154,9 +144,8 @@
               type="submit"
               href="#"
               class="btn btn-primary tm-btn-submit"
-            >
-              Submit
-            </button>
+              id="submit_but"
+            ></button>
           </div>
           <div class="col-12">
             <hr />
@@ -167,10 +156,7 @@
       <div class="row">
         <div class="col-12">
           <footer>
-            <p class="text-center mb-3 tm-footer-text">
-              Copyright &copy; 2018 Your Survey Name - HTML Form by
-              <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
-            </p>
+            <p class="text-center mb-3 tm-footer-text" id="page_footer"></p>
           </footer>
         </div>
       </div>
